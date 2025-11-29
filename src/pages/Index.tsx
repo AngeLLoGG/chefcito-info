@@ -6,8 +6,7 @@ import {
   ChefHat, 
   Target, 
   Refrigerator, 
-  ArrowRight, 
-  Github,
+  ArrowRight,
   Zap,
   Database,
   Cloud,
@@ -47,17 +46,12 @@ const Index = () => {
             <Button 
               size="lg" 
               className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 text-lg rounded-xl glow-primary transition-all duration-300 hover:scale-105"
+              asChild
             >
-              <Github className="mr-2 h-5 w-5" />
-              Ver en GitHub
-            </Button>
-            <Button 
-              size="lg" 
-              variant="outline"
-              className="border-2 border-primary text-primary hover:bg-primary/10 font-semibold px-8 py-6 text-lg rounded-xl transition-all duration-300 hover:scale-105"
-            >
-              Ver Demo
-              <ArrowRight className="ml-2 h-5 w-5" />
+              <a href="https://main.d7prmq36aez52.amplifyapp.com/" target="_blank" rel="noopener noreferrer">
+                Ver Demo
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
             </Button>
           </div>
 
@@ -309,12 +303,15 @@ const Index = () => {
             </div>
 
             <div className="flex flex-wrap gap-4 items-center">
-              <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-primary">
-                <Github className="w-5 h-5 mr-2" />
-                GitHub
-              </Button>
-              <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-primary">
-                LinkedIn
+              <Button 
+                variant="ghost" 
+                size="sm" 
+                className="text-muted-foreground hover:text-primary"
+                asChild
+              >
+                <a href="https://main.d7prmq36aez52.amplifyapp.com/" target="_blank" rel="noopener noreferrer">
+                  Ver App
+                </a>
               </Button>
             </div>
           </div>
